@@ -14,3 +14,6 @@ def testTwoNumbersAdd() -> None:
 
 def testManyNumbersAdd() -> None:
     assert Calculator.add("10,20,9,17,15") == 71
+
+def testNewLineAdd() -> None:
+    assert Calculator.add("15\n7") == 22

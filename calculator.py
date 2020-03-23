@@ -4,7 +4,7 @@
 class Calculator():
     @staticmethod
     def add(input_string: str) -> int:
-        input_list = input_string.split(",")
+        input_list = input_string.replace("\n", ",").split(",")
         if input_string == "":
             return 0
         elif len(input_list) >= 2:
