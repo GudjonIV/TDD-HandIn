@@ -17,3 +17,6 @@ def testManyNumbersAdd() -> None:
 
 def testNewLineAdd() -> None:
     assert Calculator.add("15\n7") == 22
+
+def testBiggerThan1000Add() -> None:
+    assert Calculator.add("1001,14") == 14
