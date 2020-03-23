@@ -1,6 +1,6 @@
 # Author: Guðjón Ingi Valdimarsson
 # Date: 23.03.2020
-
+import pytest
 from calculator import Calculator
 
 def testEmptyAdd() -> None:
@@ -20,3 +20,7 @@ def testNewLineAdd() -> None:
 
 def testBiggerThan1000Add() -> None:
     assert Calculator.add("1001,14") == 14
+
+def testNegativeAdd() -> None:
+    with pytest.raises(ValueError, match="Negatives not allowed: -5,-10"):
+        Calculator.add("24,-5,-10")
