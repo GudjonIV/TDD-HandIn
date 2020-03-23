@@ -24,3 +24,6 @@ def testBiggerThan1000Add() -> None:
 def testNegativeAdd() -> None:
     with pytest.raises(ValueError, match="Negatives not allowed: -5,-10"):
         Calculator.add("24,-5,-10")
+
+def testOptionalDelimeterAdd() -> None:
+    assert Calculator.add("//%\n1%2%3") == 6
