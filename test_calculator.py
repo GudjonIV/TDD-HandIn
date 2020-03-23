@@ -5,3 +5,6 @@ from calculator import Calculator
 
 def testEmptyAdd() -> None:
     assert Calculator.add("") == 0
+
+def testOneNumberAdd() -> None:
+    assert Calculator.add("1") == 1
