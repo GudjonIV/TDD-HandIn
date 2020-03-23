@@ -8,3 +8,6 @@ def testEmptyAdd() -> None:
 
 def testOneNumberAdd() -> None:
     assert Calculator.add("1") == 1
+
+def testTwoNumbersAdd() -> None:
+    assert Calculator.add("5,3") == 8
