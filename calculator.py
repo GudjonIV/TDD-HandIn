@@ -3,4 +3,5 @@
 
 class Calculator():
     def add(input_string: str) -> int:
-        return 0
+        if input_string == "":
+            return 0
